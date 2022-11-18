@@ -1,2 +1,5 @@
-import pymyip
-print("Your ip " + pymyip.get_ip())
+import bs4, requests
+s = requests.get('https://2ip.ua/ru/')
+b = bs4.BeautifulSoup(s.text, "html.parser")
+a = b.select(" .ipblockgradient .ip")[0].getText()
+print(a)
