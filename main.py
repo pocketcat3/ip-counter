@@ -1,4 +1,5 @@
 import requests
+import time
 
 def get_info_by_ip(ip='127.0.0.1'):
     try:
@@ -10,6 +11,8 @@ def get_info_by_ip(ip='127.0.0.1'):
 def main():
     ip = input('Please enter a target IP: ')
     get_info_by_ip(ip=ip)
+    time.sleep(5)
+    
 
 if __name__ == '__main__':
     main()
