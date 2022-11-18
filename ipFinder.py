@@ -1,2 +1,2 @@
 import stun
-stun.get_ip_info()
+print(stun.get_ip_info())
