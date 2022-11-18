@@ -1,2 +1,2 @@
-import stun
-stun.get_ip_info()
+import pymyip
+print("Your ip " + pymyip.get_ip())
